@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.1)
 project(lane)
 
-set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/lane.cpp)
-set(SRC_MAIN ${PROJECT_SOURCE_DIR}/main.cpp)
-set(NCNN_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/ncnn)
-set(SRC_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
-set(NCNN_LIB ${PROJECT_SOURCE_DIR}/lib/libncnn.a)
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src/lane.cpp)
+set(SRC_MAIN ${CMAKE_SOURCE_DIR}/main.cpp)
+set(NCNN_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/ncnn)
+set(SRC_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+set(NCNN_LIB ${CMAKE_SOURCE_DIR}/lib/libncnn.a)
 # OpenCV
 find_package(OpenCV REQUIRED)
 message(STATUS "Find OpenCV include at ${OpenCV_INCLUDE_DIRS}")
